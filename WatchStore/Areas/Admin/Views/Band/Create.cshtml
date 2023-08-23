@@ -1,0 +1,41 @@
+﻿@model WatchStore.Models.Models.Band
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Band</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Material"></label>
+            <input asp-for="Material" class="form-control" />
+            <span asp-validation-for="Material" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Color"></label>
+            <input asp-for="Color" class="form-control" />
+            <span asp-validation-for="Color" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Width"></label>
+            <input asp-for="Width" class="form-control" />
+            <span asp-validation-for="Width" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Length"></label>
+            <input asp-for="Length" class="form-control" />
+            <span asp-validation-for="Length" class="text-danger"></span>
+        </div>
+        <a asp-controller="Band" asp-action="Index" class="btn btn-secondary"
+           style="width:150px">
+            Back to List
+        </a>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

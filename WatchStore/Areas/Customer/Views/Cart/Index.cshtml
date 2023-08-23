@@ -1,0 +1,58 @@
+﻿@model WatchStore.Models.ViewModels.ShoppingCartVM
+<div class="col-md-8 mt-2 col-xl-6 text-center mx-auto">
+    @if(Model.ListCart.Any())
+    {
+        <h2>Your Cart</h2>
+    }
+    else
+    {
+        <h2 class="text-danger">Your Cart Is Empty</h2>
+    }
+</div>
+<form method="post">
+    <div class=" mt-5 offset-md-1">
+        @foreach (var obj in Model.ListCart)
+        {
+            <hr class="w-75">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="@obj.Product.ImageUrl" alt="Product Image" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h3>@obj.Product.Brand.Name</h3>
+                    <p>@obj.Product.Description</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                               <a asp-action="minus" asp-route-cartId="@obj.Id" class="btn btn-outline-secondary">-</a>
+                                <input type="text" class="form-control" asp-for="@obj.Count">
+                                <a asp-action="plus" asp-route-cartId="@obj.Id" class="btn btn-outline-secondary">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fw-semibold">Price: @obj.Product.DiscountedPrice.ToString("c") &nbsp;x&nbsp; @obj.Count</p>
+                    <p class="fw-semibold mb-0">Total: @string.Format("{0:c}", obj.Product.DiscountedPrice * obj.Count)</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <a asp-action="Remove" asp-route-cartId="@obj.Id" class="btn btn-danger">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        }
+        <hr class="w-75">
+        <div class="row mb-4">
+            <div class="col-md-9 text-end">
+                <h3>Total: @Model.OrderHeader.OrderTotal.ToString("c")</h3>
+                <a asp-area="Customer" asp-action="Index" asp-controller="Home" class="btn btn-secondary" style="width: 200px;">Back to home</a>
+                @if(Model.ListCart.Any())
+                {
+                <a asp-action="Summary" class="btn btn-dark" style="width: 200px;">Checkout</a>
+                }
+            </div>
+        </div>
+    </div>
+</form>

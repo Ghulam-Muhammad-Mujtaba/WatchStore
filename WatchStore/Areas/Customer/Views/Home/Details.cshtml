@@ -1,0 +1,42 @@
+﻿@model WatchStore.Models.Models.ShoppingCart
+
+<form method="post">
+    <input hidden asp-for="ProductId" />
+    <div class="container mt-5 border">
+        <div class="row">
+            <div class="text-center mx-auto bg-secondary text-light">
+                <h2>Product Detail</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-0">
+                <img src="@Model.Product.ImageUrl" alt="Product Image" class="img-fluid w-100">
+            </div>
+            <div class="col-md-6 pt-2 card">
+                <div class="card-body">
+                    <h3 class="">@Model.Product.Brand.Name</h3>
+                    <p class="text-muted mb-0">Model No: @Model.Product.ModelNo</p>
+                    <p class="text-muted mb-2">Warranty: @Model.Product.Warrenty</p>
+                    <p>@Html.Raw(@Model.Product.Description)</p>
+                    <h4>Price: <span class=" text-danger"><strike>@Model.Product.Price.ToString("c")</strike></span></h4>
+                    <h4>Discounted Price: <span class="text-success">@Model.Product.DiscountedPrice.ToString("c")</span></h4>
+                    <div class="input-group mb-3">
+                        <p class="px-2 fs-5 mb-0 fw-medium">Quantity</p>
+                        <input type="number" asp-for="Count" class="form-control">
+                    </div>
+                </div>
+                <div class="row card-footer">
+                    <div class="col-12 col-md-6 pb-1">
+                        <a asp-action="Index" class="btn btn-secondary form-control " style="height:40px;">Back to Home</a>
+                    </div>
+                    <div class="col-12 col-md-6 pb-1">
+                        <button type="submit" value="Add to Cart" class="btn btn-dark form-control"
+                                style="height:40px;">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

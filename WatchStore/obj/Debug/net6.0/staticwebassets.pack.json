@@ -1,0 +1,129 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WatchStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WatchStore.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\15b2ed9a-9ac5-4473-97ac-6c7a7856ca39.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\15b2ed9a-9ac5-4473-97ac-6c7a7856ca39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\1cbe8e8e-f048-49df-9d6b-0278f226ace8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1cbe8e8e-f048-49df-9d6b-0278f226ace8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\1f949d4e-3e06-4628-901b-0be5b1afd224.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1f949d4e-3e06-4628-901b-0be5b1afd224.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\999cd841-1cf7-4784-8a05-131106ccb70d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\999cd841-1cf7-4784-8a05-131106ccb70d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\a5309199-84c1-4e4f-bc8e-7963c4c7197c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a5309199-84c1-4e4f-bc8e-7963c4c7197c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\b0708ba7-6892-4bc4-9821-f3eb5e87bcf1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b0708ba7-6892-4bc4-9821-f3eb5e87bcf1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\de6f2fa3-b389-40ea-b396-2999d10510a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\de6f2fa3-b389-40ea-b396-2999d10510a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\e40296ac-2dde-471f-a94f-563f77e95019.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e40296ac-2dde-471f-a94f-563f77e95019.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\images\\products\\f272c9c6-419c-4322-9fc3-503c92ae3565.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f272c9c6-419c-4322-9fc3-503c92ae3565.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mujtaba\\Desktop\\WatchStore\\WatchStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WatchStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WatchStore.props",
+      "PackagePath": "build\\WatchStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WatchStore.props",
+      "PackagePath": "buildMultiTargeting\\WatchStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WatchStore.props",
+      "PackagePath": "buildTransitive\\WatchStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

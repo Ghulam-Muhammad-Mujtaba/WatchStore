@@ -1,0 +1,36 @@
+﻿@model WatchStore.Models.Models.Dial
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Dial</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Material"></label>
+            <input asp-for="Material" class="form-control" />
+            <span asp-validation-for="Material" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Diameter"></label>
+            <input asp-for="Diameter" class="form-control" />
+            <span asp-validation-for="Diameter" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Thickness"></label>
+            <input asp-for="Thickness" class="form-control" />
+            <span asp-validation-for="Thickness" class="text-danger"></span>
+        </div>
+        <a asp-controller="Dial" asp-action="Index" class="btn btn-secondary"
+           style="width:150px">
+            Back to List
+        </a>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

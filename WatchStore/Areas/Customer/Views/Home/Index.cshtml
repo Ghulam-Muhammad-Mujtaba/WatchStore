@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WatchStore.Models.Models.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Product Gallery -->
+<div class="row mb-5 pt-4 mt-4">
+    <div class="col-md-8 col-xl-6 text-center mx-auto">
+        <h2>Products</h2>
+        <p class="w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var obj in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@obj.ImageUrl" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">@obj.Brand.Name</h5>
+                        <p class="mb-0"> <b>Price: <strike class="text-danger"> $@obj.Price.ToString("0.00")</strike></b></p>
+                        <p class="mb-0"><b>Discounted Price: <span class="text-success"> $@obj.DiscountedPrice.ToString("0.00")</span></b></p>
+                        <div class="row mt-1">
+                            <div class="col-6 ">
+                                <p class="card-text"><small class="text-body-secondary">Model no: @obj.ModelNo</small></p>
+                            </div>
+                            <div class="col-5 offset-1">
+                                <p class="card-text"><small class="text-body-secondary">Warrenty: @obj.Warrenty</small></p>
+                            </div>
+                        </div>
+                        <p class="card-text pt-1 mb-0">@obj.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="Details" class="btn btn-dark form-control mt-4" asp-route-productId="@obj.Id">Read more</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
