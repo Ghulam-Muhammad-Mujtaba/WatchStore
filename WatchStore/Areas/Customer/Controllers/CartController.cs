@@ -161,7 +161,7 @@ namespace WatchStore.Areas.Customer.Controllers
             var service = new SessionService();
             Session session = service.Get(orderHeader.SessionId);
             //check the stripe status
-            if (session.PaymentStatus.ToLower() == "paid") // was "Paid" previously
+            if (session.PaymentStatus.ToLower() == "paid")
             {
                 _unitOfWork.OrderHeader.UpdateStripePaymentID(id, orderHeader.SessionId, session.PaymentIntentId);
                 _unitOfWork.OrderHeader.UpdateStatus(id, SD.StatusApproved, SD.PaymentStatusApproved);
