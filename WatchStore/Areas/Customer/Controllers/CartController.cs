@@ -152,10 +152,6 @@ namespace WatchStore.Areas.Customer.Controllers
             _unitOfWork.Save();
             Response.Headers.Add("Location", session.Url);
             return new StatusCodeResult(303);
-
-            //_unitOfWork.ShoppingCart.RemoveRange(shoppingCartVM.ListCart);
-            //_unitOfWork.Save();
-            //return RedirectToAction("Index", "Home"); //Actin: Index, Controller: Home
         }
 
         public IActionResult OrderConfirmation(int id)
@@ -176,7 +172,6 @@ namespace WatchStore.Areas.Customer.Controllers
             orderHeader.ApplicationUserId).ToList();
             _unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
             HttpContext.Session.Clear();
-            // Send email
             // Retrieve order details from the database
             List<OrderDetail> orderDetails = _unitOfWork.OrderDetail.GetAll(u => u.OrderId == id, includeProperties: "Product,Product.Brand").ToList();
 
@@ -197,8 +192,6 @@ namespace WatchStore.Areas.Customer.Controllers
                              "<br><br>Thank you for shopping with us!";
 
             _emailSender.SendEmailAsync(orderHeader.ApplicationUser.Email, subject, message);
-            //_emailSender.SendEmailAsync(orderHeader.ApplicationUser.Email, "New Order - Watch Store", "<p>New Order Created</p>");
-            _unitOfWork.Save();
             return View(orderHeader);
         }
 
