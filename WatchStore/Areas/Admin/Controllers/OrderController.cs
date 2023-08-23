@@ -89,10 +89,7 @@ namespace WatchStore.Areas.Admin.Controllers
             orderHeader.Carrier = OrderVM.OrderHeader.Carrier;
             orderHeader.OrderStatus = SD.StatusShipped;
             orderHeader.ShippingDate = DateTime.Now;
-            //if (orderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment)
-            //{
-            //    orderHeader.PaymentDueDate = DateTime.Now.AddDays(30);
-            //}
+
             _unitOfWork.OrderHeader.Update(orderHeader);
             _unitOfWork.Save();
             TempData["Success"] = "Order Shipped Successfully.";
@@ -105,7 +102,6 @@ namespace WatchStore.Areas.Admin.Controllers
         public IActionResult CancelOrder()
         {
             var orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderVM.OrderHeader.Id, tracked: false);
-            //If payment id done we need to return it before caceling order
             if (orderHeader.PaymentStatus == SD.PaymentStatusApproved)
             {
                 var options = new RefundCreateOptions
@@ -134,7 +130,6 @@ namespace WatchStore.Areas.Admin.Controllers
         public IActionResult GetAll(string status)
         {
             IEnumerable<OrderHeader> orderHeaders;
-            //Only Admin acn see all the orders
             if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
             {
                 //For Admin
